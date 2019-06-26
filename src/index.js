@@ -26,7 +26,7 @@ function addBreed(url) {
   const container = document.querySelector('#dog-breeds');
   const li = document.createElement('li');
 
-  li.textContent = breed;
+  li.textContent = breed.split('-').join(' ');
   container.appendChild(li);
 
   breeds.push(breed);
